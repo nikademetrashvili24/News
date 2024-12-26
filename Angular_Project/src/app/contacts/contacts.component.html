@@ -1,0 +1,123 @@
+<form (ngSubmit)="onSubmit()" #userForm="ngForm">
+    <div class="form-group">
+      <h1>Contact Us!</h1>
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" [(ngModel)]="userObject.name" required #nameCtrl="ngModel" minlength="3">
+       <span *ngIf="nameCtrl.invalid && nameCtrl.dirty">Name is required!!!</span>
+       <span *ngIf="nameCtrl.errors?.['minlength']">სახელი უნდა შედგებოდეს მინიმუმ 3 ასოსგან</span>
+    </div>
+  
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" name="email"[(ngModel)]="userObject.email" required #emailCtrl="ngModel">
+      <span *ngIf="emailCtrl.invalid && emailCtrl.dirty">Email is required!!!</span>
+    </div>
+  
+    <div class="form-group">
+     <label for="city">City</label>
+      <select name="city" id="city" class="form-control" [(ngModel)]="userObject.city">
+        <option *ngFor="let city of cities" [value]="city">{{city}}</option>
+      </select>
+    </div>
+    <button [disabled]="userForm.invalid" class="btn btn-success" (click)="(onSubmit)" >Submit</button>
+  </form>
+
+
+
+  <footer>
+
+    <div class="footer">
+
+    <div class="foot">
+        <ul id="ul1">
+
+            <li class="footer-link">
+                <a class="footer-home" routerLink="/" >News </a>
+              </li>
+            <li class="footer-link">
+                <a class="footer-home" routerLinkActive="active"[routerLinkActiveOptions]="{exact:true}" aria-current="page" routerLink="/" >Home</a>
+              </li>
+              <li class="footer-link">
+                <a class="footer-home" routerLinkActive="active" routerLink="articles">Articles</a>
+              </li>
+              <li class="footer-link">
+                <a class="footer-home" routerLinkActive="active" routerLink="contacts">Contacts</a>
+              </li>
+    
+
+
+
+        </ul>
+    </div>
+
+
+    <div class="foot2">
+        <ul id="ul2">
+
+
+            <li id="li2"><a >Terms & Conditions</a></li>
+            <li id="li2"><a >Privacy Policy</a></li>
+            <li id="li2"><a >Shipping Policy</a></li>
+            <li id="li2"><a>Refund Policy</a></li>
+            <li id="li2"><a >Cookies Policy</a></li>
+            <li id="li2"><a >FAQ</a></li>
+
+
+
+        </ul>
+    </div>
+
+
+
+    <div class="foot2">
+        <ul id="ul2">
+
+
+            <li id="li2"><a >Facebook</a></li>
+            <li id="li2"><a >Instagram</a></li>
+            <li id="li2"><a >Twitter</a></li>
+            <li id="li2"><a >Tiktok</a></li>
+            
+
+
+
+        </ul>
+    </div>
+
+    <div class="email">
+    
+
+    <table>
+        <h1 class="emial-h1" >Subscribe for exclusive discounts and updates:</h1>
+        <p>Enter your email adress*</p>
+
+        <label for="email"></label>
+        <input type="email" id="emialid" placeholder="Email">
+        <button type="submit" style="border: 2px blue solid;">Subscribe</button>
+
+    </table>
+
+    </div>
+
+
+
+   
+
+
+
+
+
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+</footer>
+

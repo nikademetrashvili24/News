@@ -1,0 +1,8 @@
+a{
+    color: white;
+}
+nav{
+    position: sticky !important;
+    background-color: rgb(31, 89, 169) !important;
+    z-index: 10000 !important;
+}

@@ -1,0 +1,158 @@
+.card-img-top{
+    height: 350px;
+    width: 500px;
+}
+.foot {
+    margin-top: 18%;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(88, 147, 230);
+    height: 50% ;
+    width: 23%;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 1100px; 
+    width: 100%;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 100%;
+    
+}
+
+
+#ul1 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 5%;
+    padding-left: 8%;
+}
+
+
+#li2 {
+    margin-top: 10%;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+#ul2 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 5%;
+    padding-left: 8%;
+}
+
+
+#li1 {
+    margin-top: 10%;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.foot2 {
+    margin-top: 18%;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(88, 147, 230);
+    height: 50% ;
+    width: 23%;
+    
+    
+}
+
+
+.email{
+    margin-top: 18%;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(88, 147, 230);
+    height: 50% ;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 3%;
+    
+}
+.emial-h1{
+    margin-top: 25%;
+    
+}
+a{
+    color:blue ;
+    cursor: pointer;
+    list-style: none;
+}
+a:active{
+    color: white;
+
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-link{
+   text-decoration: none;
+    margin-top: 18%;
+    color: black;
+    height: 100% ;
+    width: 23%;
+    
+}
+.footer-home{
+    text-decoration: none;
+    font-size: x-large;
+    margin-top: 18%;
+    color: black;
+    height: 100% ;
+    width: 23%;
+}
+p{
+    color: blue;
+    font-size: 25px;
+    margin-top: 3%;
+    
+}
+
+#emialid{
+    padding-left: 2%;
+    width: 80%;
+    height: 8%;
+    border: 3px solid blue;
+    border-radius: 29px;
+    margin-top: 5%;
+    font-size: x-large;
+    background-color: transparent;
+    
+
+}
+button{
+    margin-top: 5%;
+   border: 2px solid red;
+   width: 50%;
+   height: 8%;
+   border-radius: 25px;
+   font-size: large;
+   background-color: blue;
+   cursor: pointer;
+   color: white;
+
+}
+button:hover{
+    background-color: white;
+    color: blue;
+    
+}
